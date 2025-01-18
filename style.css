@@ -1,0 +1,73 @@
+#menu {
+    display: none; /* 初期状態は非表示 */
+}
+#menu.show {
+    display: block; /* .show が付与された場合に表示 */
+}
+.hamburger {
+    cursor: pointer; /* クリック可能なスタイル */
+}
+
+/* ビュー設定: ビューポートに合わせた表示 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* コンテナの設定 */
+.saidai {
+    width: 100%; /* 幅を100%に */
+    box-sizing: border-box; /* パディングやボーダーも幅に含める */
+}
+
+/* メインのセクション */
+.main {
+    width: 100%; /* 幅を100%に */
+}
+
+/* ヘッダー */
+.header-container {
+    width: 100%;
+    background-color: #f8f8f8; /* ヘッダーの背景色（適宜変更） */
+    padding: 10px 20px;
+}
+
+/* 見出しのスタイル */
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* スマホ表示に特化したレスポンシブ設定 */
+@media screen and (max-width: 768px) {
+    /* スマートフォンなど、画面幅が768px以下の場合に適用 */
+    body {
+        font-size: 14px; /* スマホ用にフォントサイズを調整 */
+    }
+
+    iframe {
+        width: 100%; /* iframeの横幅を100%に */
+        height: auto; /* 高さは自動で調整 */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* 見出しサイズ調整 */
+    }
+
+    h2 {
+        font-size: 1rem; /* 見出し2のサイズ調整 */
+    }
+}
+
+/* 画面サイズが768px以上の場合 */
+@media screen and (min-width: 769px) {
+    iframe {
+        width: 100%; /* 幅を100%に設定 */
+        height: 450px; /* 高さを固定 */
+    }
+}
