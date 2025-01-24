@@ -62,6 +62,11 @@ h1, h2 {
     h2 {
         font-size: 1rem; /* 見出し2のサイズ調整 */
     }
+
+    .picture {
+        width: 100%;
+        height: auto;
+      }
 }
 
 /* 画面サイズが768px以上の場合 */
