@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #menu {
     display: none; /* 初期状態は非表示 */
 }
