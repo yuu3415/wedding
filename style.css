@@ -71,6 +71,96 @@ h1, h2 {
         width: 100%;
         height: auto;
       }
+
+      .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hamburger {
+        display: block;
+        /* 960px以下で表示 */
+    }
+
+    #menu {
+        flex-direction: column;
+        /* 縦に並べる */
+        position: absolute;
+        /* 絶対位置で表示 */
+        background: rgba(255, 255, 255, 0.6);
+        color: rgba(0, 0, 0, 0.8);
+        /* 濃いグレー */
+        /* 背景色を設定 */
+        width: 100%;
+        /* 幅を100%に */
+        top: 20px;
+        /* ハンバーガーの下に配置 */
+        left: 0;
+        z-index: 1000;
+        /* 他の要素の上に表示 */
+    }
+
+    #menu.show {
+        display: flex;
+        /* メニューが表示されるクラス */
+    }
+
+    #menu a {
+        text-decoration: none;
+        /* 下線を消す */
+        color: #333;
+        /* リンクの色を設定 */
+        padding: 10px;
+        /* フォントサイズを調整 */
+        display: block;
+        /* リンクをブロック要素にしてクリックしやすく */
+        font-weight: bold;
+    }
+
+    #menu li:hover a {
+        color: #dfbe2e;
+        transform: scale(1.1);
+        /* スケールを使って少し拡大 */
+        transition: transform 0.2s;
+        /* スケールの遷移を追加 */
+    }
+
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .log-area {
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+
+    .logo {
+        width: 50px;
+        height: 20%;
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    .nav-links ul li {
+        display: inline-block;
+        padding: 0 2rem;
+    }
+
+    .nav-links ul a {
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .nav-links ul a:hover {
+        color: #dfbe2e
+    }
+
+    
+    
 }
 
 /* 画面サイズが768px以上の場合 */
