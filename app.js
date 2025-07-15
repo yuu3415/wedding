@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <ul id="menu">
                     <li><a href="index.html">Profile</a></li>
                     <li><a href="https://www.instagram.com/marie_no_daibouken/profilecard/?igsh=aThlNmpqemYxanU3" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="form.html">フォーム</a></li>
+                    <li><a href="form.html" target="_blank">フォーム</a></li>
                     <li><a href="#yuu1">見出し１</a></li>
                     <li><a href="#yuu2">見出し２</a></li>
                 </ul>
