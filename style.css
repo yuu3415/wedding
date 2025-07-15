@@ -54,6 +54,10 @@ h1, h2 {
         font-size: 14px; /* スマホ用にフォントサイズを調整 */
     }
 
+.picture {
+  display: block;
+}
+
     iframe {
         width: 100%; /* iframeの横幅を100%に */
         height: auto; /* 高さは自動で調整 */
