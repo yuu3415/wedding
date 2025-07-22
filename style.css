@@ -54,6 +54,17 @@ h1, h2 {
         font-size: 14px; /* スマホ用にフォントサイズを調整 */
     }
 
+    .header-container {
+    position: fixed;     /* ← 固定表示 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #f8f8f8; /* 背景色で裏が透けないように */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* お好みで影を付ける */
+}
+
 .picture {
   display: block;
 }

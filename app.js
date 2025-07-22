@@ -2,39 +2,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerHTML = `
         <nav>
             <div class="nav-links">
-                <div class="hamburger" id="hamburger">&#9776;</div> <!-- ハンバーガーアイコン -->
-                <ul id="menu">
-                    <li><a href="index.html">Profile</a></li>
-                    <li><a href="https://www.instagram.com/marie_no_daibouken/profilecard/?igsh=aThlNmpqemYxanU3" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="form.html" target="_blank">フォーム</a></li>
-                    <li><a href="#yuu1">見出し１</a></li>
-                    <li><a href="#yuu2">見出し２</a></li>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul id="menu" class="menu">
+                    <li><a href="#inv">Invitation</a></li>
+                    <li><a href="#mes">Message</a></li>
+                    <li><a href="#info">Information</a></li>
+                    <li><a href="#loc">Location</a></li>
+                    <li><a href="#host">Host</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9_8pv90gPvaVdUKrb5V31LvOWMYAHvqYNPB7v8NO1gOE5A/viewform?usp=sharing" target="_blank">Form</a></li>
+                    <li><a href="https://www.instagram.com/marie_no_daibouken/profilecard/?igsh=aThlNmpqemYxanU3" target="_blank" rel="noopener noreferrer">Marie's Photo</a></li>
                 </ul>
             </div>
         </nav>
     `;
 
-    // ヘッダー部分を.header-containerに挿入
-    document.querySelector(".header-container").innerHTML = headerHTML;
-});
+    // ヘッダーを挿入
+    const container = document.querySelector(".header-container");
+    container.innerHTML = headerHTML;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    if (hamburger) {
-        hamburger.addEventListener('click', function () {
-            const menu = document.getElementById('menu');
-            if (menu) {
-                menu.classList.toggle('show'); // メニューの表示・非表示を切り替え
-            }
-        });
-    }
+    // 挿入後に要素を取得
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    const links = menu.querySelectorAll("a");
 
-    if (hamburger) {
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('menu');
-            if (menu && !hamburger.contains(event.target) && !menu.contains(event.target)) {
-                menu.classList.remove('show'); 
-            }
+    // ハンバーガー開閉
+    hamburger.addEventListener("click", function () {
+        menu.classList.toggle("show");
+    });
+
+    // メニューのリンクを押すと閉じる
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
         });
-    }
+    });
 });
