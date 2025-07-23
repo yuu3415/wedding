@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li><a href="#info">Information</a></li>
                     <li><a href="#loc">Location</a></li>
                     <li><a href="#host">Host</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9_8pv90gPvaVdUKrb5V31LvOWMYAHvqYNPB7v8NO1gOE5A/viewform?usp=sharing" target="_blank">Form</a></li>
+                    <li><a href="#form">Form</a></li>
                     <li><a href="https://www.instagram.com/marie_no_daibouken/profilecard/?igsh=aThlNmpqemYxanU3" target="_blank" rel="noopener noreferrer">Marie's Photo</a></li>
                 </ul>
             </div>
